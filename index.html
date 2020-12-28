@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aplicacion web</title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="contenedor">
+	<div class="tab icon">
+		<i class="fab fa-buffer"></i>
+		<p>Organization<br>List</p>
+	</div>
+	<div class="tab" id="tab">
+		<div class="container" id="container">
+			<i class="fas fa-pen" id="editar"></i>
+		    <a class="tablinks editar" id="nuevoTitulo">editar</a>
+		</div>
+	<div class="info">
+		<div class="tooltip left"><i class="fas fa-info-circle"></i><span class="tiptext">This page works with LocalStorage. Your list will not disappear when you update or close the window.</span>
+		</div>
+	</div>
+	</div>
+
+
+<div id="zonaTrabajo">	
+	<div id="columnas" class="tabcontent">
+		<div class="columna">
+			<h4>New Tasks</h4>
+			<div id="columna1"></div>
+		</div>
+
+		<div class="columna">
+			<h4>In process</h4>
+			<div id="columna2"></div>
+		</div>
+			
+		<div class="columna">
+			<h4>Finished tasks</h4>
+			<div id="columna3"></div>
+		</div>
+	</div>
+</div>
+
+	<div class="tarjeta">
+		<div id="tarjeta">
+			<form class="formTask" id="button">
+			<label class="white-text flow-text">Add task</label>
+		    <div class="form-group">
+		    <input type="text" id="title" placeholder="Title of task" class="white" onfocus="">
+		    </div>
+		    <div class="form-group">
+		    <textarea id="description" cols="30" rows="10"placeholder="Description of tasks" class="white"></textarea>
+		    </div>
+		    <button class="btn btn-block">Save</button>
+		    </form>
+		</div>	
+		<a class="btn-floating btn-large button" id="desplegarForm">
+    	<i class="fas fa-bars"></i>
+  		</a>
+	</div>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> 
+<script src="app/app.js"></script>
+<script src="app/app2.js"></script>
+
+</body>
+</html>

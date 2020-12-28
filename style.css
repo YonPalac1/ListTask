@@ -1,0 +1,163 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background:url(fondo.jpg);
+}
+.contenedor i{
+	color: #000;
+}
+.tab.icon{
+	background-color:#6cf;
+	text-align:center;
+	font-size:42px;
+	display:flex;
+	justify-content:center;
+}
+.tab.icon p{
+	font-size:19px;
+	color:#fff;
+	margin-left:20px;
+}
+.tab.icon i{
+	color:#fff;
+}
+.tab {
+  overflow: hidden;
+  background-color: #fff;
+	border: 2px solid #6cf;
+}
+.tab .tablinks {
+  background-color: inherit;
+  color:#000;
+  float: left;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 25px;
+}
+
+.columna{
+	width: 18%;
+	margin: 10px 25px;
+	padding: 8px 18px;
+	float: left;
+	display: block;
+	border-radius: 10px;
+	background-color: #6cf;
+	border: 2px solid #fff;
+	text-align:center;
+}
+h4{
+	font-size: 25px;
+	color: #fff;
+	padding-bottom:10px;
+	border-bottom: 2px solid #fff;
+}
+
+#tarjeta{
+	background: #6cf;
+	padding: 18px;
+}
+.tarjeta{
+	bottom: 0;
+	right: 0;
+	float: right;
+	padding: 18px;
+	position: fixed;
+}
+.tarjeta input{
+	padding: 15px 20px;
+}
+.tarjeta textarea{
+	min-width: 300px;
+	min-height: 200px;
+	max-width: 300px;
+	max-height: 300px;
+	padding: 20px;	
+}
+ .button{
+	font-size: 30px;
+	bottom: 0;
+	right: 0;
+	margin: 25px;
+	padding: 20px 20px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: #39f;
+}
+.button:hover{
+	background-color: #6ce;
+}
+.tarjeta .btn{
+	background-color: #39f;
+}
+.tarjeta .btn:hover{
+	background-color: #6ce;
+}
+.tarjeta i{
+	color:#fff;
+}
+
+
+.botonCerrar{
+	margin: 10px;
+	width: fit-content;
+	float: left;
+}
+.card-stacked{
+	margin-top: -30px;
+	cursor:n-resize;
+}
+
+.tarjetaTarea button{
+	border: none;
+	color: #fff;
+	padding: 3px;
+	background-color: #6cf;
+}
+
+.info{
+	position:absolute;
+	right:0;
+	margin-right:20px;
+	background:none;
+	box-shadow:none;
+}
+.info i{
+	font-size:30px;
+	color:#36b;
+}
+.tooltip {
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+.tooltip .tiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 6px 0;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    top:-5px;
+    right:110%;
+}
+.tooltip .tiptext::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    margin-top:-5px;
+    top:50%;
+    left:100%;
+
+}
+.tooltip:hover .tiptext {
+    visibility: visible;
+}
